@@ -1,0 +1,75 @@
+html {
+	scroll-behavior: smooth;
+}
+
+/* #carousel-index {
+	height: calc(100vh - 84px);
+} */
+
+#carousel-index .carousel-item img {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+
+#carousel-product .carousel-item img {
+	width: 100%;
+	height: 30vh;
+	object-fit: cover;
+}
+
+#a-href-shopping-cart {
+	left: 1345px;
+}
+
+#badge-total-quantity-order {
+	position: relative;
+	top: -30px;
+	left: -15px;
+}
+
+#popular>.card-group>.card .card-img-overlay {
+	visibility: hidden;
+}
+
+#popular>.card-group>.card:hover .card-img-top {
+	filter: brightness(30%);
+}
+
+#popular>.card-group>.card:hover .card-img-overlay {
+	visibility: visible;
+}
+
+.card-img-top, .card-img-overlay {
+	transition: filter 0.35s ease-out;
+	-webkit-transition: filter 0.35s ease-out;
+	-o-transition-timing: filter 0.35s ease-out;
+}
+
+#categories {
+	background: url(../image/cate.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#copyright {
+	background-color: black;
+}
+
+#div-sign-in {
+	position: absolute;
+	top: 25%;
+	left: 60%;
+	z-index: 99;
+}
+
+#div-sign-up {
+	position: absolute;
+	top: 15%;
+	left: 60%;
+	z-index: 99;
+}
+
+.pointer {
+	cursor: pointer;
+}

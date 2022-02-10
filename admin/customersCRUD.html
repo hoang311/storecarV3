@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COLLECTION GARAGE</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- DataTable min -->
+    <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- Other -->
+    <link rel="stylesheet" href="styleCRUD.css">
+</head>
+
+<body class="hold-transition sidebar-mini sidebar-collapse">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="../customer/index.html" class="nav-link">For Customers</a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Navbar Search -->
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <div class="navbar-search-block">
+                        <form class="form-inline">
+                            <div class="input-group input-group-sm">
+                                <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-navbar" type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="" class="brand-link">
+                <img src="../customer/image/collectionlogo1.png" alt="COLLECTION GARAGE Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">COLLECTION GARAGE</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a id="a-user-role" href="#" class="d-block">Admin</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link active">
+                                <i class="nav-icon fas fa-cogs"></i>
+                                <p>
+                                    Home<i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="usersCRUD.html" class="nav-link">
+                                        <i class="fas fa-users-cog"></i>
+                                        <p>Users</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="customersCRUD.html" class="nav-link active">
+                                        <i class="fas fa-users"></i>
+                                        <p>Customers</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="paymentsCRUD.html" class="nav-link">
+                                        <i class="fas fa-file-invoice-dollar"></i>
+                                        <p>Payments</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="ordersCRUD.html" class="nav-link">
+                                        <i class="fas fa-receipt"></i>
+                                        <p>Orders</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="orderdetailsCRUD.html" class="nav-link">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <p>Order Details</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="productsCRUD.html" class="nav-link">
+                                        <i class="fas fa-box-open"></i>
+                                        <p>Products</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="productlinesCRUD.html" class="nav-link">
+                                        <i class="fas fa-boxes"></i>
+                                        <p>Product Lines</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="employeesCRUD.html" class="nav-link">
+                                        <i class="fas fa-user-secret"></i>
+                                        <p>Employees</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="officesCRUD.html" class="nav-link">
+                                        <i class="fas fa-building"></i>
+                                        <p>Offices</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="reportordersCRUD.html" class="nav-link">
+                                        <i class="fas fa-chart-line"></i>
+                                        <p>Report Orders</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="reportcustomersCRUD.html" class="nav-link">
+                                        <i class="far fa-chart-bar"></i>
+                                        <p>Report Customers</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>Customers</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active">Customers</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid px-4">
+                    <h3 class="text-uppercase font-weight-bold text-center">
+                        customer list
+                    </h3>
+                    <!-- Tạo customer -->
+                    <button id="btn-create-customer" class="btn btn-primary mb-3">
+                        <i class="fas fa-user-plus"></i>&nbsp;&nbsp;Create Customer
+                    </button>
+                    <!-- Table -->
+                    <table class="table table-bordered table-hover table-striped" id="table-customer">
+                        <thead>
+                            <tr class="table-secondary">
+                                <th>ID</th>
+                                <th>Last Name</th>
+                                <th>First Name</th>
+                                <th>Phone Number</th>
+                                <th>Payments</th>
+                                <th>Orders</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <!-- Form mode -->
+                    <div id="form-mode"></div>
+                </div>
+                <!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> m.n.0
+            </div>
+            <strong>Copyright &copy; 2021 <a href="../customer/index.html">COLLECTION GARAGE</a>.</strong>
+            All rights reserved.
+        </footer>
+
+        <!-- Modal customer create/edit-->
+        <div id="modal-customer" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header justify-content-end jumbotron m-0">
+                        <h4 id="modal-h4-title" class="modal-title col-10 text-uppercase text-center font-weight-bold">
+
+                        </h4>
+                        <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body jumbotron px-5 m-0">
+                        <form id="modal-form-customer" action="">
+                            <div class="form-group update-only">
+                                <label for="modal-customer-inp-id" class="font-weight-normal">
+                                    ID
+                                </label>
+                                <input id="modal-customer-inp-id" class="form-control" type="number" disabled>
+                            </div>
+                            <div class="form-group create">
+                                <label for="modal-customer-inp-last-name" class="font-weight-normal">
+                                    Last Name
+                                    <span class="text-danger">&nbsp;(*)</span>
+                                </label>
+                                <input id="modal-customer-inp-last-name" class="form-control" type="text">
+                            </div>
+                            <div class="form-group create">
+                                <label for="modal-customer-inp-first-name" class="font-weight-normal">
+                                    First Name
+                                    <span class="text-danger">&nbsp;(*)</span>
+                                </label>
+                                <input id="modal-customer-inp-first-name" class="form-control" type="text">
+                            </div>
+                            <div class="form-group create">
+                                <label for="modal-customer-inp-phone-number" class="font-weight-normal">
+                                    Phone Number
+                                    <span class="text-danger">&nbsp;(*)</span>
+                                </label>
+                                <input id="modal-customer-inp-phone-number" class="form-control" type="text">
+                            </div>
+                            <div class="form-group create">
+                                <label for="modal-customer-textarea-address" class="font-weight-normal">
+                                    Address
+                                </label>
+                                <textarea name="" id="modal-customer-textarea-address" class="form-control" rows="3">
+
+                                </textarea>
+                            </div>
+                            <div class="form-group create">
+                                <label for="modal-customer-inp-city" class="font-weight-normal">
+                                    City
+                                </label>
+                                <input id="modal-customer-inp-city" class="form-control" type="text">
+                            </div>
+                            <div class="form-group create">
+                                <label for="modal-customer-inp-state" class="font-weight-normal">
+                                    State
+                                </label>
+                                <input id="modal-customer-inp-state" class="form-control" type="text">
+                            </div>
+                            <div class="form-group create">
+                                <label for="modal-customer-inp-postal-code" class="font-weight-normal">
+                                    Postal Code
+                                </label>
+                                <input id="modal-customer-inp-postal-code" class="form-control" type="text">
+                            </div>
+                            <div class="form-group create">
+                                <label for="modal-customer-inp-country" class="font-weight-normal">
+                                    Country
+                                </label>
+                                <input id="modal-customer-inp-country" class="form-control" type="text">
+                            </div>
+                            <div class="form-group create">
+                                <label for="modal-customer-inp-sales-rep-employee-number" class="font-weight-normal">
+                                    Sales Rep Employee Number
+                                </label>
+                                <input id="modal-customer-inp-sales-rep-employee-number" class="form-control"
+                                    type="number">
+                            </div>
+                            <div class="form-group create">
+                                <label for="modal-customer-inp-credit-limit" class="font-weight-normal">
+                                    Credit Limit
+                                </label>
+                                <input id="modal-customer-inp-credit-limit" class="form-control" type="number">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer jumbotron px-5 m-0">
+                        <div class="col-12 p-0 m-0">
+                            <div class="d-flex justify-content-around">
+                                <button id="modal-customer-btn-close" type="button" class="btn btn-danger col-3"
+                                    data-dismiss="modal">Close</button>
+                                <button id="modal-customer-btn-create" type="button" class="btn btn-success col-3">
+                                    Create
+                                </button>
+                                <button id="modal-customer-btn-update" type="button" class="btn btn-success col-3">
+                                    Update
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal cảnh báo validate thông tin chưa chính xác -->
+        <div class="modal fade" id="modal-warning">
+            <div class="modal-dialog">
+                <div class="modal-content bg-warning">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Warning</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="modal-p-warning">&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <!-- Modal cảnh báo xoá dữ liệu -->
+        <div class="modal fade" id="modal-danger">
+            <div class="modal-dialog">
+                <div class="modal-content bg-danger">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Danger</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="modal-p-delete"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline-light" id="modal-btn-confirm-delete">
+                            Confirm Delete
+                        </button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <!-- Modal thông báo thành công -->
+        <div class="modal fade" id="modal-success">
+            <div class="modal-dialog">
+                <div class="modal-content bg-success">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Success</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="modal-p-success"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Select2 -->
+    <script src="plugins/select2/js/select2.full.min.js"></script>
+    <!-- DataTable min -->
+    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <!-- InputMask -->
+    <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/inputmask/jquery.inputmask.min.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+    <!-- Xử lý -->
+    <script src="customersCRUD.js"></script>
+
+</body>
+
+</html>
