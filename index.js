@@ -1,7 +1,7 @@
 "use strict";
 /*** REGION 1 - Global variables - Vùng khai báo biến, hằng số, tham số TOÀN CỤC */
 // URL get API
-const gBASE_URL = "https://back-end-one.herokuapp.com/";
+const gBASE_URL = "https://back-end-two.herokuapp.com/";
 
 // Biến hằng lưu giá trị tổng số lượng các sản phẩm
 var gTotalQuantityOrder = 0;
